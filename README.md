@@ -10,22 +10,29 @@ For the backend, we will use dockerized FastAPI and PostgreSQL (accessed via SQL
 - Docker
 
 ### Installation
+
 1. Clone the repository
 2. Go to backend directory
 3. Build docker container and migrate database
   - build docker container
-  ```
+
+  ```bash
   docker-compose build
   ```
+
   - migrate database
-  ```
+
+  ```bash
   docker-compose run web alembic revision --autogenerate
   ```
+
 4. Run docker container
-  ```
+  
+  ```bash
   docker-compose up -d
   ```
-5. The application url is localhost:8000
+
+5. The application url is `localhost:8000`
 
 ## Frontend
 
